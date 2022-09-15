@@ -1,8 +1,7 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 
 
 class ProductManagerTest {
@@ -17,7 +16,7 @@ class ProductManagerTest {
 
 
     @Test
-    void addTest() {
+   public void addTest() {
         manager.add(book);
         manager.add(book1);
         manager.add(book3);
@@ -27,7 +26,7 @@ class ProductManagerTest {
     }
 
     @Test
-    void searchByTest() {
+  public  void searchByTest() {
         manager.add(book);
         manager.add(book1);
         manager.add(book3);

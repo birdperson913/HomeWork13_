@@ -1,12 +1,7 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-
-
-import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
 
 class ProductRepositoryTest {
     ProductRepository repository = new ProductRepository();
@@ -17,7 +12,7 @@ class ProductRepositoryTest {
 
 
     @Test
-    void saveTest() {
+   public void saveTest() {
         manager.add(book);
         manager.add(book1);
         manager.add(book3);
@@ -28,7 +23,7 @@ class ProductRepositoryTest {
 
 
     @Test
-    void removeByIdTest() {
+   public void removeByIdTest() {
         manager.add(book);
         manager.add(book1);
         manager.add(book3);
