@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-
 class ProductRepositoryTest {
     ProductRepository repository = new ProductRepository();
     ProductManager manager = new ProductManager(repository);
@@ -12,23 +11,23 @@ class ProductRepositoryTest {
 
 
     @Test
-   public void saveTest() {
+    public void saveTest() {
         manager.add(book);
         manager.add(book1);
         manager.add(book3);
-        Product [] actual ={book , book1, book3};
-        Product []expect= repository.allMass();
-        Assertions.assertArrayEquals(expect,actual);
+        Product[] actual = {book, book1, book3};
+        Product[] expect = repository.allMass();
+        Assertions.assertArrayEquals(expect, actual);
     }
 
 
     @Test
-   public void removeByIdTest() {
+    public void removeByIdTest() {
         manager.add(book);
         manager.add(book1);
         manager.add(book3);
-        Product  [] actual = {book1, book3};
-        Product []expect = repository.removeById(1);
-        Assertions.assertArrayEquals(expect,actual);
+        Product[] actual = {book1, book3};
+        Product[] expect = repository.removeById(1);
+        Assertions.assertArrayEquals(expect, actual);
     }
 }

@@ -9,7 +9,6 @@ public class ProductRepository {
     }
 
 
-
     public Product[] allMass() {
         return products;
     }
