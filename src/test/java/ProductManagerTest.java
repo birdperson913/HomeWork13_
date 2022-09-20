@@ -31,7 +31,7 @@ class ProductManagerTest {
         Assertions.assertArrayEquals(expect, actual);
     }
     @Test
-    public void searchByZeroResultTest() {
+    public void searchByTwoResultTest() {
         manager.add(book);
         manager.add(book1);
         manager.add(book3);
@@ -41,12 +41,12 @@ class ProductManagerTest {
         Assertions.assertArrayEquals(expect, actual);
     }
     @Test
-    public void searchByTwoResultTest() {
+    public void searchByZeroResultTest() {
         manager.add(book);
         manager.add(book1);
         manager.add(book3);
         manager.add(book4);
-        Product[] actual = {null};
+        Product[] actual = {};
         Product[] expect = manager.searchBy("Мертвые кошки");
         Assertions.assertArrayEquals(expect, actual);
     }
